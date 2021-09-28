@@ -1,0 +1,52 @@
+  {
+    "name": "muath-ye/dashboard",
+    "description": "Do simple laravel helpers and dashboard with infoym adminLTE.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muathye",
+            "email": "muath.ye@gmail.com"
+        }
+    ],
+    "keywords": [
+        "muath-ye",
+        "dashboard",
+        "laravel-helper",
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "nesbot/carbon": "^2.17",
+        // Your dependencies
+        "infyomlabs/laravel-generator": "^3.0",
+        "laravelcollective/html": "^6.2",
+        "infyomlabs/adminlte-templates": "^3.0",
+        "doctrine/dbal": "~2.3",
+        "yajra/laravel-datatables": "^1.5",
+        "yajra/laravel-datatables-buttons": "^4.10",
+        "yajra/laravel-datatables-oracle": "~9.0",
+        "spatie/laravel-permission": "^5.1"
+    },
+    "extra": {
+    "laravel": {
+      "providers": [
+        "InfyOm\\Generator\\InfyOmGeneratorServiceProvider"
+      ],
+      "aliases": {
+        "Form" : "Collective\\Html\\FormFacade",
+        "Html" : "Collective\\Html\\HtmlFacade",
+        "Flash" : "Laracasts\\Flash\\Flash"
+      }
+    },
+  },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
