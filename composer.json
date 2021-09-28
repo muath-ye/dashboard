@@ -1,4 +1,4 @@
-  {
+{
     "name": "muath-ye/dashboard",
     "description": "Do simple laravel helpers and dashboard with infoym adminLTE.",
     "type": "library",
@@ -12,7 +12,7 @@
     "keywords": [
         "muath-ye",
         "dashboard",
-        "laravel-helper",
+        "laravel-helper"
     ],
     "minimum-stability": "dev",
     "require": {
@@ -36,7 +36,7 @@
         "Html" : "Collective\\Html\\HtmlFacade",
         "Flash" : "Laracasts\\Flash\\Flash"
       }
-    },
+    }
   },
     "autoload": {
         "files": [
